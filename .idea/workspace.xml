@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f89f6781-c973-41ab-862a-d30ef968de5a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="answer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -665,7 +665,7 @@
       <workItem from="1474227678356" duration="518000" />
       <workItem from="1474228222418" duration="1298000" />
       <workItem from="1474229548430" duration="1042000" />
-      <workItem from="1474230616097" duration="99894000" />
+      <workItem from="1474230616097" duration="100097000" />
     </task>
     <servers />
   </component>
@@ -702,7 +702,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111195000" />
+    <option name="totallyTimeSpent" value="111398000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

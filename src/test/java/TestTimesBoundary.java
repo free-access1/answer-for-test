@@ -33,10 +33,10 @@ public class TestTimesBoundary extends DataProviderContainer{
 
     public List<Set> modifyTime(String morningStartTime, String dayStartTime, String eveningStartTime, String nightStartTime) {
         List<Set> result = new LinkedList<Set>();
-        result.add(new Set("утра", LocalTime.parse(morningStartTime).toNanoOfDay() / 1000000, LocalTime.parse(dayStartTime).toNanoOfDay() / 1000000));
-        result.add(new Set("дня", LocalTime.parse(dayStartTime).toNanoOfDay() / 1000000, LocalTime.parse(eveningStartTime).toNanoOfDay() / 1000000));
-        result.add(new Set("вечера", LocalTime.parse(eveningStartTime).toNanoOfDay() / 1000000, LocalTime.parse(nightStartTime).toNanoOfDay() / 1000000));
-        result.add(new Set("ночи", LocalTime.parse(nightStartTime).toNanoOfDay() / 1000000, LocalTime.parse(morningStartTime).toNanoOfDay() / 1000000));
+        result.add(new Set("morning", "утра", LocalTime.parse(morningStartTime).toNanoOfDay() / 1000000, LocalTime.parse(dayStartTime).toNanoOfDay() / 1000000));
+        result.add(new Set("day", "дня", LocalTime.parse(dayStartTime).toNanoOfDay() / 1000000, LocalTime.parse(eveningStartTime).toNanoOfDay() / 1000000));
+        result.add(new Set("evening", "вечера", LocalTime.parse(eveningStartTime).toNanoOfDay() / 1000000, LocalTime.parse(nightStartTime).toNanoOfDay() / 1000000));
+        result.add(new Set("night", "ночи", LocalTime.parse(nightStartTime).toNanoOfDay() / 1000000, LocalTime.parse(morningStartTime).toNanoOfDay() / 1000000));
 
         return result;
     }
@@ -56,7 +56,7 @@ public class TestTimesBoundary extends DataProviderContainer{
         boolean result = false;
 
         for (int i = 0; i < set.size(); i++) {
-            if (resultStr.equals(set.get(i).getDayTime())) {
+            if ((resultStr.equals(set.get(i).getDayTimeEN())) || (resultStr.equals(set.get(i).getDayTimeRU()))) {
                 if ((currentTimeInMilliseconds >= set.get(i).getStart()) && (currentTimeInMilliseconds < set.get(i).getEnd())) {
                     result = true;
                     break;
@@ -81,18 +81,24 @@ public class TestTimesBoundary extends DataProviderContainer{
 
 // вспомогательный класс для сбора данных
 class Set {
-    String dayTime;
+    String dayTimeEN;
+    String dayTimeRU;
     long start;
     long end;
 
-    public Set (String dayTime, long start, long end) {
-        this.dayTime = dayTime;
+    public Set (String dayTimeEN, String dayTimeRU, long start, long end) {
+        this.dayTimeEN = dayTimeEN;
+        this.dayTimeRU = dayTimeRU;
         this.start = start;
         this.end = end;
     }
 
-    public String getDayTime() {
-        return dayTime;
+    public String getDayTimeEN() {
+        return dayTimeEN;
+    }
+
+    public String getDayTimeRU() {
+        return dayTimeRU;
     }
 
     public long getStart() {

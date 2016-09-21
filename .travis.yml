@@ -1,0 +1,23 @@
+language: rust
+sudo: required
+rust:
+  - beta
+  - nightly
+  - stable
+os:
+  - linux
+install:
+  - sudo apt-get update -q
+  - sudo apt-get install libsdl2-dev
+before_script:
+  - rustc -V
+  - cargo -V
+script:
+  - cargo build --release -v
+  - cargo test -v
+notifications:
+  email:
+    recipients:
+      - travis.notification@mail.ru
+    on_success: never
+    on_failure: always

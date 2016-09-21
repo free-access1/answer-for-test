@@ -1,0 +1,49 @@
+1    [main] DEBUG root  - application is started
+103  [main] DEBUG root  - current time is recordered
+109  [main] TRACE root  - morning: localized message is defined
+110  [main] TRACE root  - morning: property-file is opened
+110  [main] TRACE root  - morning: (String) morningTime.start is got from file
+119  [main] TRACE root  - morning: (long) morningTime.start is defined
+120  [main] TRACE root  - morning: (String) morningTime.end is got from file
+120  [main] TRACE root  - morning: (long) morningTime.end is defined
+120  [main] TRACE root  - morning: (long) morningTime.start and (long) morningTime.end are defined
+120  [main] TRACE root  - morning: property-file is closed
+120  [main] TRACE root  - morning: data is collected - (long) morningTime.start, (long) morningTime.end and localized message for morning
+120  [main] TRACE root  - morning: data is added to list
+120  [main] TRACE root  - day: localized message is defined
+120  [main] TRACE root  - day: property-file is opened
+120  [main] TRACE root  - day: (String) dayTime.start is got from file
+120  [main] TRACE root  - day: (long) dayTime.start is defined
+120  [main] TRACE root  - day: (String) dayTime.end is got from file
+121  [main] TRACE root  - day: (long) dayTime.end is defined
+121  [main] TRACE root  - day: (long) dayTime.start and (long) dayTime.end are defined
+121  [main] TRACE root  - day: property-file is closed
+121  [main] TRACE root  - day: data is collected - (long) dayTime.start, (long) dayTime.end and localized message for day
+121  [main] TRACE root  - day: data is added to list
+121  [main] TRACE root  - evening: localized message is defined
+121  [main] TRACE root  - evening: property-file is opened
+121  [main] TRACE root  - evening: (String) eveningTime.start is got from file
+121  [main] TRACE root  - evening: (long) eveningTime.start is defined
+121  [main] TRACE root  - evening: (String) eveningTime.end is got from file
+122  [main] TRACE root  - evening: (long) eveningTime.end is defined
+122  [main] TRACE root  - evening: (long) eveningTime.start and (long) eveningTime.end are defined
+122  [main] TRACE root  - evening: property-file is closed
+122  [main] TRACE root  - evening: data is collected - (long) eveningTime.start, (long) eveningTime.end and localized message for evening
+122  [main] TRACE root  - evening: data is added to list
+122  [main] TRACE root  - night: localized message is defined
+122  [main] TRACE root  - night: property-file is opened
+122  [main] TRACE root  - night: (String) nightTime.start is got from file
+122  [main] TRACE root  - night: (long) nightTime.start is defined
+122  [main] TRACE root  - night: (String) nightTime.end is got from file
+122  [main] TRACE root  - night: (long) nightTime.end is defined
+122  [main] TRACE root  - night: (long) nightTime.start and (long) nightTime.end are defined
+122  [main] TRACE root  - night: property-file is closed
+122  [main] TRACE root  - night: data is collected - (long) nightTime.start, (long) nightTime.end and localized message for night
+123  [main] TRACE root  - night: data is added to list
+123  [main] INFO  root  - datalist is ready
+123  [main] DEBUG root  - greeting rule is created
+123  [main] TRACE root  - searching right answer for current time is started
+123  [main] INFO  root  - searching right answer for current time is finished
+124  [main] DEBUG root  - greeting is shown
+125  [main] DEBUG root  - application is finishing...
+125  [main] DEBUG root  - ================================================
